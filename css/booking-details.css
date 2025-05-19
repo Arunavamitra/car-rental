@@ -1,0 +1,513 @@
+:root {
+  --theme-color: #ffae00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+header.header_section {
+  background-color: #fff;
+  z-index: 9999;
+}
+header.header_section .navbar-nav li {
+  padding: 0px 6px;
+}
+header.header_section .navbar-nav li a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #000 !important;
+}
+header.header_section .navbar-nav li:last-child {
+  background-color: var(--theme-color);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+header.header_section .navbar-nav li:last-child a {
+  transition: all 0.3s linear;
+  color: #fff !important;
+}
+header.header_section .navbar-nav li:last-child:hover {
+  background-color: transparent;
+  border: 1px solid var(--theme-color);
+}
+header.header_section .navbar-nav li:last-child:hover a {
+  color: var(--theme-color) !important;
+}
+.breadcrumb_section {
+  background-image: url("../images/vistara_bg.jpg");
+  padding: 150px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.breadcrumb_section h3:first-child {
+  font-size: 48px;
+  font-weight: 600;
+}
+.breadcrumb_section h3:nth-child(2) {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--theme-color);
+}
+.car_details_section {
+  padding: 50px 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    url("../images/vistara_bg.jpg");
+  background-size: cover;
+}
+.car_details_section .bg-off-wite {
+  background-color: #ebf6ff;
+}
+.car_details_section .booking_details_wrapper {
+  border-right: 1px solid #b0b0b054;
+  padding-right: 15px;
+}
+.car_details_section .booking_details_wrapper h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a202c;
+  padding-bottom: 20px;
+}
+.car_details_section .booking_details_wrapper h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.car_details_section .booking_details_wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #919191;
+}
+.car_details_section .car_track {
+  display: flex;
+  justify-content: space-between;
+}
+.car_details_section .car_track > div {
+  text-align: center;
+}
+.car_details_section .car_track h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #919191;
+}
+.car_details_section .car_track h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.car_details_section .car_track p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #575757;
+}
+.car_details_section .car_details_location h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #575757;
+}
+.car_details_section .car_details_location h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.car_details_section .car_details_location p {
+  font-size: 8px;
+  font-weight: 400;
+}
+.car_details_section .car_details_location > div {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+}
+.car_details_section .booking-summary .booking-summary-details {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.car_details_section .booking-summary .booking-summary-details ul {
+  padding-left: 0;
+}
+.car_details_section .booking-summary .booking-summary-details ul li {
+  font-style: 14px;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.car_details_section
+  .booking-summary
+  .booking-summary-details
+  ul
+  li:last-child {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 10px;
+}
+.car_details_section .important_read h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.car_details_section .important_read .important_read_item {
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #b0b0b0;
+}
+.car_details_section .important_read .important_read_item h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.car_details_section .important_read .important_read_item p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #b0b0b0;
+  margin: 0;
+}
+.car_details_section .kilometer-summary-details ul {
+  padding-left: 0;
+}
+.car_details_section .kilometer-summary-details ul li {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: space-between;
+}
+.car_details_section .kilometer-summary-details ul li p:first-child {
+  color: #919191;
+}
+.car_details_section .proceed_to_pay {
+  padding: 20px 0;
+}
+.car_details_section .proceed_to_pay a {
+  background-color: #000;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.car_details_section .car_meta {
+  padding: 10px 0;
+}
+.car_details_section .car_meta ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.car_details_section .car_meta ul li {
+  font-size: 14px;
+  color: #90a3bf;
+  display: inline-block;
+  padding: 0 3px;
+  font-weight: 500;
+}
+.service_provide_details {
+  padding: 60px 0;
+}
+.service_provide_details h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.service_provide_details hr {
+  background-color: #f2f2f2;
+}
+.service_provide_details .service_provider_meta {
+  display: flex;
+  gap: 15px;
+}
+.service_provide_details .service_provider_meta .service_provider_meta_desc h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.service_provide_details .service_provider_meta .service_provider_meta_desc p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #919191;
+  margin: 3px 0;
+}
+.service_provide_details
+  .service_provider_meta
+  .service_provider_meta_desc
+  p.response {
+  font-size: 10px;
+  font-weight: 500;
+  color: #6fb64d;
+}
+.service_provide_details
+  .service_provider_meta
+  .service_provider_meta_desc
+  .review {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.service_provide_details
+  .service_provider_meta
+  .service_provider_meta_desc
+  .review
+  i {
+  color: var(--theme-color);
+}
+.service_provide_details .service_provider_image img {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.service_provide_details .additional_info,
+.service_provide_details .support {
+  padding: 20px 0;
+}
+.service_provide_details .additional_info h3,
+.service_provide_details .support h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.service_provide_details .additional_info p,
+.service_provide_details .support p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #919191;
+}
+.service_provide_details .support ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.service_provide_details .support ul li {
+  padding-right: 5px;
+  margin: 15px 0;
+  display: inline-block;
+}
+.service_provide_details .support ul li a {
+  padding: 8px 20px;
+  color: var(--theme-color);
+  border: 2px solid var(--theme-color);
+  border-radius: 4px;
+}
+.service_provide_details .support h6 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.service_provide_details .drop-off-location-wrapper .drop-off-location {
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 0 30px 10px;
+}
+.service_provide_details .drop-off-location-wrapper .drop-off-location h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-align: center;
+}
+.service_provide_details .drop-off-location-wrapper .drop-off-location p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: #919191;
+}
+.get_in_touch_section {
+  padding: 120px 0;
+  background-image: linear-gradient(360deg, #000000 50%, #fff 50%);
+}
+.get_in_touch_section .get_in_touch_inner_wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px 5px #00000029;
+  padding: 30px 60px;
+}
+.get_in_touch_section h2 {
+  font-size: 47px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.get_in_touch_section form {
+  padding: 0 30px;
+}
+.get_in_touch_section form .form-field {
+  margin: 20px 0;
+}
+.get_in_touch_section form .form-field input[type="text"],
+.get_in_touch_section form .form-field input[type="email"],
+.get_in_touch_section form .form-field textarea {
+  border: 1px solid #b0b0b0;
+  width: 100%;
+  padding: 8px 18px;
+  color: #b0b0b0;
+  border-radius: 4px;
+}
+.get_in_touch_section form .form-field input[type="text"]::placeholder,
+.get_in_touch_section form .form-field input[type="email"]::placeholder,
+.get_in_touch_section form .form-field textarea::placeholder {
+  color: #b0b0b0;
+}
+.get_in_touch_section form .form-field input[type="text"]:focus,
+.get_in_touch_section form .form-field input[type="email"]:focus,
+.get_in_touch_section form .form-field textarea:focus {
+  border: 1px solid var(--theme-color);
+  outline: none;
+}
+.get_in_touch_section form .form-field button[type="submit"] {
+  background-color: var(--theme-color);
+  padding: 8px 18px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+.get_in_touch_section .download_app_area h5 {
+  font-size: 24px;
+  font-weight: 300;
+}
+.get_in_touch_section .download_app_area p {
+  font-size: 16px;
+  color: #ada9a9;
+  margin: 20px 0;
+  font-weight: 300;
+}
+footer {
+  background-color: #000000;
+  padding-bottom: 30px;
+}
+footer .footer-widget p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff9f9;
+  margin: 14px 0;
+}
+footer .footer-widget .social-logos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer .footer-widget .social-logos ul li {
+  padding: 10px;
+  display: inline-block;
+}
+footer .footer-widget .social-logos ul li a {
+  color: var(--theme-color);
+}
+footer .footer-widget h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+footer .footer-widget .footer-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer .footer-widget .footer-menu ul li {
+  padding: 5px 0;
+}
+footer .footer-widget .footer-menu ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .footer-widget form .form-field {
+  margin: 20px 0;
+}
+footer .footer-widget form .form-field input[type="text"],
+footer .footer-widget form .form-field input[type="email"],
+footer .footer-widget form .form-field textarea {
+  border: 1px solid #b0b0b0;
+  width: 100%;
+  padding: 8px 18px;
+  color: #b0b0b0;
+  border-radius: 4px;
+  background-color: #d9d9d9;
+}
+footer .footer-widget form .form-field input[type="text"]::placeholder,
+footer .footer-widget form .form-field input[type="email"]::placeholder,
+footer .footer-widget form .form-field textarea::placeholder {
+  color: #b0b0b0;
+  font-size: 12px;
+  font-weight: 400;
+}
+footer .footer-widget form .form-field input[type="text"]:focus,
+footer .footer-widget form .form-field input[type="email"]:focus,
+footer .footer-widget form .form-field textarea:focus {
+  border: 1px solid var(--theme-color);
+  outline: none;
+}
+footer .footer-widget form .form-field button[type="submit"] {
+  background-color: var(--theme-color);
+  padding: 8px 18px;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+footer hr {
+  background-color: var(--theme-color);
+}
+
+@media only screen and (min-width: 1300px) {
+  .container-lg,
+  .container-xl {
+    max-width: 1250px !important;
+  }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1300px) {
+  header.header_section .navbar-nav li {
+    padding: 0px 3px !important;
+  }
+  .find_car_section .find_car_wrapper .single_find_car_wrapper input {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .section_title h3 {
+    font-size: 28px;
+  }
+  .get_in_touch_section h2 {
+    font-size: 28px;
+  }
+  .get_in_touch_section .get_in_touch_inner_wrapper {
+    padding: 20px;
+  }
+  .get_in_touch_section .get_in_touch_inner_wrapper form {
+    padding: 0;
+  }
+  .navbar-light .navbar-toggler {
+    background-color: var(--theme-color);
+  }
+  .navbar-collapse {
+    background-color: #fff;
+    width: 100%;
+  }
+  .breadcrumb-section .breadcrumb-content h3 {
+    font-size: 70px;
+  }
+  .breadcrumb-section .breadcrumb-content h2 {
+    font-size: 88px;
+  }
+  .car_details_section .car_details_location {
+    margin-top: 10px;
+  }
+  .car_details_section .car_details_location > div {
+    display: unset;
+    justify-content: space-between;
+    text-align: unset;
+  }
+}
